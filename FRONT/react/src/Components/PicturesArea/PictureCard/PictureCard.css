@@ -1,0 +1,8 @@
+.PictureCard {
+    max-width: 250px;
+}
+
+.PictureCard img {
+    max-width: 250px;
+    max-height: 250px;
+}
