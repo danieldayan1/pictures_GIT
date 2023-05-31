@@ -6,6 +6,7 @@ import helmet from 'helmet';
 
 import imageRouter from './src/routes/images.route.js';
 import { config  } from './src/configs/general.config.js';
+import cors from 'cors';
 
 const { port, hostname } = config;
 const app = express();
@@ -14,6 +15,9 @@ app.use(logger('short'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet())
+app.use(cors({
+    origin: '*'
+}));
 
 app.use('/images', imageRouter);
 

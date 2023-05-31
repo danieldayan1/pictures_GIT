@@ -6,6 +6,8 @@ import PictureModel from "../Models/PictureModel";
 // 1. Global State -
 export class PicturesState {
     public pictures: PictureModel[] = [];
+    public category:string = " " ;
+    public page:number = 1;
     public updateFlag: Boolean = false; 
 }
 

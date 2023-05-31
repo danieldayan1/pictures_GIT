@@ -9,7 +9,7 @@ class Config {
     // public registerUrl = "http://localhost:3030/api/auth/register/";
     // public loginUrl = "http://localhost:3030/api/auth/login/"
 
-    public picturesUrl = "https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${CATEGORY}"
+    public picturesUrl = `http://localhost:3000/images`
 
 }
 

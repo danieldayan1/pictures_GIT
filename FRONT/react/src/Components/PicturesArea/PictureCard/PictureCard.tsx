@@ -16,12 +16,8 @@ function ProductCard(props: PictureCardProps): JSX.Element {
         <div className="PictureCard">
             <div className="col">
                 <div className="card" >
-                    <NavLink  to={`/pictures/details/` + "" +props.picture.id}  style={{ textDecoration: 'none' }} >
-                    <img src={config.picturesUrl + props.picture.id} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">category:{props.picture.category}</h5>
-                        <p className="card-text">views: {props.picture.views}</p>
-                    </div>
+                    <NavLink style={{ textDecoration: 'none'}} to={`/pictures/details/`} state = {props.picture}>
+                        <img src={props.picture.url} className="card-img-top" alt="..." />
                     </NavLink>
                 </div>
             </div>

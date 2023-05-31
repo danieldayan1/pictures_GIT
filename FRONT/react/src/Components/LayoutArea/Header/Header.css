@@ -4,6 +4,9 @@
     font-family: 'Cabin', sans-serif;
     font-family: 'Karantina', cursive;
     font-family: 'Poppins', sans-serif;
+    color:rgb(66, 55, 163);
+    filter:alpha(opacity=40);
+    margin: 0px;
 }
 .Header {
     height: 100%;
@@ -14,4 +17,5 @@
 
 .home a{
     text-decoration:none;
+
 }

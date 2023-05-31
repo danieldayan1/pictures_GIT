@@ -1,6 +1,9 @@
 class PictureModel{
-    public id:string;
+    public url:string;
     public views:number;
-    public category:number
+    public downloads:number;
+    public likes:number;
+    public comments:string;
+    public category:string;
 }
 export default PictureModel
